@@ -1,0 +1,102 @@
+/* Import Thai font - must be first */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --orange-light: #FFA726;
+  --orange-main: #FF8C00;
+  --orange-dark: #F57C00;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'Prompt', sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Prompt', Arial, Helvetica, sans-serif;
+}
+
+/* Placeholder styles */
+::placeholder {
+  color: #9CA3AF !important;
+  opacity: 1 !important;
+}
+
+input:focus::placeholder {
+  color: #D1D5DB !important;
+}
+
+/* Input text color */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  color: #1F2937 !important;
+}
+
+/* Hero Section Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out 0.2s both;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in-up 1s ease-out 0.4s both;
+}
+
+/* ServiceCard Hexagonal Clip Effect */
+.clip-hexagon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Optional: Add subtle hexagonal clip-path for modern browsers */
+@supports (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)) {
+  .clip-hexagon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,40 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <rect width="1200" height="630" fill="url(#gradient)"/>
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Solar panel icon -->
+  <g transform="translate(450, 180)">
+    <rect x="0" y="0" width="300" height="200" rx="10" fill="white" opacity="0.1"/>
+    <rect x="10" y="10" width="135" height="85" rx="5" fill="white" opacity="0.2"/>
+    <rect x="155" y="10" width="135" height="85" rx="5" fill="white" opacity="0.2"/>
+    <rect x="10" y="105" width="135" height="85" rx="5" fill="white" opacity="0.2"/>
+    <rect x="155" y="105" width="135" height="85" rx="5" fill="white" opacity="0.2"/>
+    
+    <!-- Sun icon -->
+    <circle cx="250" cy="50" r="30" fill="#FCD34D"/>
+    <line x1="250" y1="10" x2="250" y2="0" stroke="#FCD34D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="250" y1="100" x2="250" y2="90" stroke="#FCD34D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="210" y1="50" x2="200" y2="50" stroke="#FCD34D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="300" y1="50" x2="290" y2="50" stroke="#FCD34D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="220" y1="20" x2="213" y2="13" stroke="#FCD34D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="287" y1="87" x2="280" y2="80" stroke="#FCD34D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="220" y1="80" x2="213" y2="87" stroke="#FCD34D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="287" y1="13" x2="280" y2="20" stroke="#FCD34D" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="450" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="white" text-anchor="middle">
+    Solar Cell CMS
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="510" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" opacity="0.9">
+    โซลูชันโซล่าเซลล์ครบวงจร
+  </text>
+</svg>
