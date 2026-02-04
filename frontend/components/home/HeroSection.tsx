@@ -41,7 +41,7 @@ export default function HeroSection({ header, title, description, media }: HeroS
           </video>
         )}
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/70 to-transparent" />
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/70 to-transparent" /> */}
       </div>
 
       {/* Content */}
